@@ -1,10 +1,71 @@
----
-title: cart-info
-layout: ./app/cart.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>cart-checkout</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light border-bottom">
+      <div class="container">
+        <a
+          class="fs-sm-nav fs-3 navbar-brand mx-auto text-primary fw-normal"
+          href="#"
+          >EXHIBINECTION</a
+        >
+        <ul class="nav">
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link" href="#">Sign in</a>
+          </li>
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link" href="#">Sign up</a>
+          </li>
+          <li class="nav-item position-relative mt-2">
+            <a href="#" class="">
+              <span class="material-icons text-dark">
+                confirmation_number
+              </span>
+              <span
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-zeal
+                "
+                >3</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
 <!-- 內容 -->
 <div class="container">
   <!-- 進度條 -->
@@ -22,8 +83,8 @@ current: index
           </div>
         </div>
         <div class="col-3">
-          <div class="timeline-dot">
-            <p class="mt-4 timeline-text">填寫付款資訊</p>
+          <div class="timeline-pointer">
+            <p class="mt-4 timeline-text fw-bold">填寫付款資訊</p>
           </div>
         </div>
         <div class="col-3">
@@ -38,59 +99,49 @@ current: index
   <div class="row">
     <!-- 手機訂單資訊 -->
     <div class="col-md-4 d-block d-md-none">
-      <h3 class="fs-4 fw-bold mb-5">訂購人資訊</h3>
-      <div class="mb-5">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="example@gmail.com"
-        />
-      </div>
-      <div class="mb-5">
-        <label for="exampleFormControlName" class="form-label">姓名</label>
-        <input
-          type="text"
-          class="form-control"
-          id="exampleFormControlName"
-          placeholder="請輸入姓名"
-        />
-      </div>
-      <div class="mb-5">
-        <label for="exampleFormControlName" class="form-label">聯絡電話</label>
-        <input
-          type="text"
-          class="form-control"
-          id="exampleFormControlName"
-          placeholder="請輸入電話"
-        />
-      </div>
-      <div>
-        <label for="exampleFormControlName" class="form-label">優惠碼</label>
-        <input
-          type="text"
-          class="form-control"
-          id="exampleFormControlName"
-          placeholder="TG87526"
-        />
-        <p class="text-wine text-end fs-6">優惠碼已生效</p>
-      </div>
-      <div class="col-12 col-md-12 mt-8">
-        <div class="d-flex justify-content-between mb-3">
-          <span class="fw-bolder">小計</span>
-          <span>NT$1050</span>
+        <h3 class="fs-4 fw-bold mb-5">付款資訊</h3>
+        <div class="mb-5">
+          <label for="exampleFormControlInput1" class="form-label">信用卡帳號</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Xxxx-xxxx-xxxx-xxxx"
+          />
         </div>
-        <div class="d-flex justify-content-between mb-3">
-          <span class="fw-bolder">折扣</span>
-          <span>-NT$50</span>
+        <div class="mb-5">
+          <label for="exampleFormControlName" class="form-label">有效日期</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlName"
+            placeholder="(MM/YY)"
+          />
         </div>
-        <div class="d-flex justify-content-between mb-3">
-          <span class="fs-4 fw-bolder">總金額</span>
-          <span class="fs-4 fw-bolder">NT$1000</span>
+        <div class="mb-5">
+          <label for="exampleFormControlName" class="form-label">安全碼</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlName"
+            placeholder="***"
+          />
+        </div>
+        <div class="col-12 col-md-12 mt-8">
+          <div class="d-flex justify-content-between mb-3">
+            <span class="fw-bolder">小計</span>
+            <span>NT$1050</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span class="fw-bolder">折扣</span>
+            <span>-NT$50</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span class="fs-4 fw-bolder">總金額</span>
+            <span class="fs-4 fw-bolder">NT$1000</span>
+          </div>
         </div>
       </div>
-    </div>
     <!-- 購物車 -->
     <div class="col-md-8">
       <div class="row mb-4">
@@ -170,43 +221,33 @@ current: index
     </div>
     <!-- 訂單資訊 -->
     <div class="col-md-4 d-none d-md-block">
-      <h3 class="fs-4 fw-bold mb-5">訂購人資訊</h3>
-      <div class="mb-5">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <h3 class="fs-4 fw-bold mb-5">付款資訊</h3>
+      <div class="mb-9">
+        <label for="exampleFormControlInput1" class="form-label">信用卡帳號</label>
         <input
           type="email"
           class="form-control"
           id="exampleFormControlInput1"
-          placeholder="example@gmail.com"
+          placeholder="Xxxx-xxxx-xxxx-xxxx"
         />
       </div>
-      <div class="mb-5">
-        <label for="exampleFormControlName" class="form-label">姓名</label>
+      <div class="mb-9">
+        <label for="exampleFormControlName" class="form-label">有效日期</label>
         <input
           type="text"
           class="form-control"
           id="exampleFormControlName"
-          placeholder="請輸入姓名"
+          placeholder="(MM/YY)"
         />
       </div>
-      <div class="mb-5">
-        <label for="exampleFormControlName" class="form-label">聯絡電話</label>
+      <div class="mb-9">
+        <label for="exampleFormControlName" class="form-label">安全碼</label>
         <input
           type="text"
           class="form-control"
           id="exampleFormControlName"
-          placeholder="請輸入電話"
+          placeholder="***"
         />
-      </div>
-      <div>
-        <label for="exampleFormControlName" class="form-label">優惠碼</label>
-        <input
-          type="text"
-          class="form-control"
-          id="exampleFormControlName"
-          placeholder="TG87526"
-        />
-        <p class="text-wine text-end fs-6">優惠碼已生效</p>
       </div>
       <div class="col-12 col-md-12 mt-8">
         <div class="d-flex justify-content-between mb-3">
@@ -225,7 +266,7 @@ current: index
     </div>
   </div>
   <div class="row my-6 my-md-0">
-    <div class="col-6 col-md-3">
+    <div class="col-6 col-md-1">
       <div class="d-grid gap-2">
         <button type="button" class="btn btn-outline-primary">返回</button>
       </div>
@@ -237,3 +278,9 @@ current: index
     </div>
   </div>
 </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

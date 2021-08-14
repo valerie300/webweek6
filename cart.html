@@ -1,10 +1,71 @@
----
-title: cart
-layout: ./app/cart.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>cart</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light border-bottom">
+      <div class="container">
+        <a
+          class="fs-sm-nav fs-3 navbar-brand mx-auto text-primary fw-normal"
+          href="#"
+          >EXHIBINECTION</a
+        >
+        <ul class="nav">
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link" href="#">Sign in</a>
+          </li>
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link" href="#">Sign up</a>
+          </li>
+          <li class="nav-item position-relative mt-2">
+            <a href="#" class="">
+              <span class="material-icons text-dark">
+                confirmation_number
+              </span>
+              <span
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-zeal
+                "
+                >3</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
 <!-- 內容 -->
 <div class="container">
   <!-- 進度條 -->
@@ -205,3 +266,9 @@ current: index
     </div>
   </div>
 </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
