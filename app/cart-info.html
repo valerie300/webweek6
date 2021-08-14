@@ -1,0 +1,239 @@
+---
+title: cart-info
+layout: ./app/cart.ejs
+engine: ejs
+current: index
+---
+
+<!-- 內容 -->
+<div class="container">
+  <!-- 進度條 -->
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row timeline-section">
+        <div class="col-3">
+          <div class="timeline-pointer">
+            <p class="mt-4 timeline-text fw-bold">確認訂單</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="timeline-pointer">
+            <p class="mt-4 timeline-text fw-bold">填寫訂購資訊</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="timeline-dot">
+            <p class="mt-4 timeline-text">填寫付款資訊</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="timeline-dot">
+            <p class="mt-4 timeline-text">完成訂購</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 購物車 -->
+  <div class="row">
+    <!-- 手機訂單資訊 -->
+    <div class="col-md-4 d-block d-md-none">
+      <h3 class="fs-4 fw-bold mb-5">訂購人資訊</h3>
+      <div class="mb-5">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="example@gmail.com"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="exampleFormControlName" class="form-label">姓名</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlName"
+          placeholder="請輸入姓名"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="exampleFormControlName" class="form-label">聯絡電話</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlName"
+          placeholder="請輸入電話"
+        />
+      </div>
+      <div>
+        <label for="exampleFormControlName" class="form-label">優惠碼</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlName"
+          placeholder="TG87526"
+        />
+        <p class="text-wine text-end fs-6">優惠碼已生效</p>
+      </div>
+      <div class="col-12 col-md-12 mt-8">
+        <div class="d-flex justify-content-between mb-3">
+          <span class="fw-bolder">小計</span>
+          <span>NT$1050</span>
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+          <span class="fw-bolder">折扣</span>
+          <span>-NT$50</span>
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+          <span class="fs-4 fw-bolder">總金額</span>
+          <span class="fs-4 fw-bolder">NT$1000</span>
+        </div>
+      </div>
+    </div>
+    <!-- 購物車 -->
+    <div class="col-md-8">
+      <div class="row mb-4">
+        <div class="col-5 col-md-3 clearfix">
+          <img
+            class="img-fluid"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt="購物車"
+          />
+        </div>
+        <div class="col-7 col-md-3 d-flex flex-column justify-content-evenly">
+          <div class="d-flex justify-content-between">
+            <h4 class="fw-bolder">2020 台味設計展</h4>
+          </div>
+          <span class="fw-bold">01 JUN — 31 OCT</span>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="text-secondary">全票</span>
+            <span class="fs-4 fw-bold d-md-none">1</span>
+            <span class="fs-4 fw-bold d-md-none">NT$350</span>
+          </div>
+        </div>
+        <div class="col-md-6 d-none d-md-flex align-items-center">
+          <span class="fw-bolder fs-4">NT$350</span>
+          <div>
+            <span class="fw-bolder fs-4 ms-9">1</span>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-5 col-md-3 clearfix">
+          <img
+            class="img-fluid"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+            alt="購物車"
+          />
+        </div>
+        <div class="col-7 col-md-3 d-flex flex-column justify-content-evenly">
+          <div class="d-flex justify-content-between">
+            <h4 class="fw-bolder">No.22 線上設計展</h4>
+          </div>
+          <span class="fw-bold">01 JUN — 31 OCT</span>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="text-secondary">全票</span>
+            <span class="fs-4 fw-bold d-md-none">1</span>
+            <span class="fs-4 fw-bold d-md-none">NT$350</span>
+          </div>
+        </div>
+        <div class="col-md-6 d-none d-md-flex align-items-center">
+          <span class="fw-bolder fs-4">NT$350</span>
+          <span class="fw-bolder fs-4 ms-9">1</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5 col-md-3 clearfix">
+          <img
+            class="img-fluid"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg"
+            alt="購物車"
+          />
+        </div>
+        <div class="col-7 col-md-3 d-flex flex-column justify-content-evenly">
+          <div class="d-flex justify-content-between">
+            <h4 class="fw-bolder">高雄設計節</h4>
+          </div>
+          <span class="fw-bold">01 JUN — 31 OCT</span>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="text-secondary">全票</span>
+            <span class="fs-4 fw-bold d-md-none">1</span>
+            <span class="fs-4 fw-bold d-md-none">NT$350</span>
+          </div>
+        </div>
+        <div class="col-md-6 d-none d-md-flex align-items-center">
+          <span class="fw-bolder fs-4">NT$350</span>
+          <span class="fw-bolder fs-4 ms-9">1</span>
+        </div>
+      </div>
+    </div>
+    <!-- 訂單資訊 -->
+    <div class="col-md-4 d-none d-md-block">
+      <h3 class="fs-4 fw-bold mb-5">訂購人資訊</h3>
+      <div class="mb-5">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="example@gmail.com"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="exampleFormControlName" class="form-label">姓名</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlName"
+          placeholder="請輸入姓名"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="exampleFormControlName" class="form-label">聯絡電話</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlName"
+          placeholder="請輸入電話"
+        />
+      </div>
+      <div>
+        <label for="exampleFormControlName" class="form-label">優惠碼</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlName"
+          placeholder="TG87526"
+        />
+        <p class="text-wine text-end fs-6">優惠碼已生效</p>
+      </div>
+      <div class="col-12 col-md-12 mt-8">
+        <div class="d-flex justify-content-between mb-3">
+          <span class="fw-bolder">小計</span>
+          <span>NT$1050</span>
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+          <span class="fw-bolder">折扣</span>
+          <span>-NT$50</span>
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+          <span class="fs-4 fw-bolder">總金額</span>
+          <span class="fs-4 fw-bolder">NT$1000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-6 my-md-0">
+    <div class="col-6 col-md-3">
+      <div class="d-grid gap-2">
+        <button type="button" class="btn btn-outline-primary">返回</button>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 offset-md-8">
+      <div class="d-grid gap-2">
+        <button type="button" class="btn btn-zeal">下一步</button>
+      </div>
+    </div>
+  </div>
+</div>

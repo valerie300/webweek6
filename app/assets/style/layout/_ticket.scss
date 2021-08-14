@@ -1,0 +1,48 @@
+// 票券
+.ticket-num{
+    font-size: 40px;
+    line-height: 60px;
+}
+.ticket-type{
+    border-bottom: solid 2px transparent;
+}
+.ticket-type:hover{
+    border-bottom: solid 2px #E31277;
+}
+.ticket-border{
+    border-left: none;
+}
+@include media-breakpoint-up(md) { 
+    .ticket-border{
+        border-left: 1px solid #000;
+    }
+}
+// 滿版banner
+.ticket-wall{
+    width: auto;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg);
+}
+// 藝饗宴
+.ticket-banquet{
+    height: 559px;
+}
+.ticket-text{
+    text-indent: 30px;
+}
+// 購物車
+.cart-img{
+    width: 120px;
+    height: 120px;
+}
+.cart-hover{
+    color: #fff#630834;
+    background-color: #fff;
+}
+.cart-hover:hover{
+    color: #fff;
+    background-color: #630834;
+}

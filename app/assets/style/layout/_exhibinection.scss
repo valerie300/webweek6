@@ -1,0 +1,13 @@
+// 台味設計展
+.design-title{
+    font-size: 36px;
+    line-height: 54px;
+}
+.design-width{
+    width: 32px;
+}
+@include media-breakpoint-up(sm) { 
+    .design-sm-text{
+        font-size: 16px;
+    }
+}

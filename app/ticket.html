@@ -1,0 +1,408 @@
+---
+title: exhibinection page2
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- nav -->
+<div class="nav-scroller bg-body shadow-sm border-top d-none d-md-block">
+  <nav
+    class="
+      nav
+      d-flex
+      justify-content-start justify-content-md-center
+      flex-nowrap
+      text-nowrap
+    "
+  >
+    <a class="nav-link text-center" href="#">音樂</a>
+    <a class="nav-link text-center" href="#">戲劇</a>
+    <a class="nav-link text-center" href="#">設計</a>
+    <a class="nav-link text-center" href="#">藝術</a>
+    <a class="nav-link text-center" href="#">美食</a>
+    <a class="nav-link text-center" href="#">旅遊</a>
+    <a class="nav-link text-center" href="#">電影</a>
+    <a class="nav-link text-center" href="#">親子</a>
+    <a class="nav-link text-center" href="#">期間限定</a>
+  </nav>
+</div>
+<!-- 內容 -->
+<div class="container">
+  <div class="row mt-md-9">
+    <div class="col-md-6 clearfix">
+      <div class="card">
+        <img
+          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+          class="img-fluid position-relative"
+          alt="票券"
+        />
+        <p
+          class="
+            pe-md-6
+            d-none d-md-block
+            fs-4
+            lh-base
+            fw-bolder
+            position-absolute
+            top-25
+            end-0
+            text-white
+          "
+        >
+          01 <br />JUN <br />| <br />31 <br />OCT
+        </p>
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <h3 class="fs-4 lh-base fw-bolder">2020 台味設計展</h3>
+              <span style="font-size: 1.5rem" class="mb-3 ms-3">
+                <i class="fab fa-facebook"></i>
+              </span>
+            </div>
+            <span class="fs-4 mb-3 d-block d-md-none"> 01 JUN | 31 OCT </span>
+          </div>
+          <p class="card-text">
+            一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 flex-column d-flex justify-content-md-evenly">
+      <div class="d-flex flex-column align-items-center">
+        <div class="mt-md-4">
+          <button class="btn btn-outline-secondary border-0" type="button">
+            <span class="material-icons-outlined"> remove </span>
+          </button>
+          <span class="ticket-num fw-bolder mx-5">01</span>
+          <button class="btn btn-outline-secondary border-0" type="button">
+            <span class="material-icons-outlined"> add </span>
+          </button>
+        </div>
+        <span class="mt-md-6">張</span>
+      </div>
+      <div class="d-grid gap-2">
+        <button
+          class="btn btn-outline-primary py-3 d-none d-md-block"
+          type="button"
+        >
+          收藏展覽
+        </button>
+      </div>
+    </div>
+    <div class="col-md-3 flex-column d-flex justify-content-md-evenly">
+      <div class="d-flex flex-column align-items-center mt-7 ticket-border">
+        <div class="mt-md-4">
+          <span class="ticket-num fw-bolder mx-5">NT$350</span>
+        </div>
+        <span class="mt-md-6">票種</span>
+        <div class="d-flex align-items-center mt-3">
+          <a href="#" class="fw-bold px-3 ticket-type"> 學生 </a>
+          <a href="#" class="fw-bold px-3 ticket-type"> 全票 </a>
+          <a href="#" class="fw-bold px-3 ticket-type"> 愛心 </a>
+        </div>
+      </div>
+      <div class="d-grid gap-2 mb-7">
+        <button
+          class="btn btn-zeal py-3 d-none d-md-block"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          type="button"
+        >
+          購買票券
+        </button>
+      </div>
+      <div class="row d-md-none">
+        <div class="d-grid gap-2 col">
+          <button class="btn btn-outline-primary py-3" type="button">
+            收藏展覽
+          </button>
+        </div>
+        <div class="d-grid gap-2 col">
+          <button
+            class="btn btn-zeal py-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            購買票券
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 彈跳視窗 -->
+    <div
+      class="offcanvas offcanvas-end bg-dark"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel" class="fs-1 fw-bolder text-white py-2 py-md-4">
+          Cart List
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset btn-light"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card rounded-3 mb-4">
+          <div class="row gx-2 pb-4 pb-md-5">
+            <div class="col-auto col-md-4 d-flex flex-column clearfix">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <img
+                class="img-fluid cart-img ms-3 ms-md-6"
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+                alt="購物車"
+              />
+            </div>
+            <div class="col col-md-8">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  mt-2
+                "
+              >
+                <div>
+                  <h5 class="card-title fw-bolder">2020 台味設計展</h5>
+                  <span class="card-text">01 JUN — 31 OCT</span><br />
+                  <span class="card-text">全票</span><br />
+                  <span class="card-text fw-bolder fs-4">NT$350</span>
+                </div>
+                <div
+                  class="
+                    d-flex
+                    flex-column
+                    d-md-block
+                    flex-md-row
+                    align-items-center
+                  "
+                >
+                  <button
+                    class="btn btn-outline-secondary border-0"
+                    type="button"
+                  >
+                    <span class="material-icons-outlined"> remove </span>
+                  </button>
+                  <span class="fs-4 fw-bolder">01</span>
+                  <button
+                    class="btn btn-outline-secondary border-0"
+                    type="button"
+                  >
+                    <span class="material-icons-outlined"> add </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card rounded-3 mb-4">
+          <div class="row gx-2 pb-4 pb-md-5">
+            <div class="col-auto col-md-4 d-flex flex-column clearfix">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <img
+                class="img-fluid cart-img ms-3 ms-md-6"
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+                alt="購物車"
+              />
+            </div>
+            <div class="col col-md-8">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  mt-2
+                "
+              >
+                <div>
+                  <h5 class="card-title fw-bolder">2020 台味設計展</h5>
+                  <span class="card-text">01 JUN — 31 OCT</span><br />
+                  <span class="card-text">全票</span><br />
+                  <span class="card-text fw-bolder fs-4">NT$350</span>
+                </div>
+                <div
+                  class="
+                    d-flex
+                    flex-column
+                    d-md-block
+                    flex-md-row
+                    align-items-center
+                  "
+                >
+                  <button
+                    class="btn btn-outline-secondary border-0"
+                    type="button"
+                  >
+                    <span class="material-icons-outlined"> remove </span>
+                  </button>
+                  <span class="fs-4 fw-bolder">01</span>
+                  <button
+                    class="btn btn-outline-secondary border-0"
+                    type="button"
+                  >
+                    <span class="material-icons-outlined"> add </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card rounded-3">
+          <div class="row gx-2 pb-4 pb-md-5">
+            <div class="col-auto col-md-4 d-flex flex-column clearfix">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <img
+                class="img-fluid cart-img ms-3 ms-md-6"
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg"
+                alt="購物車"
+              />
+            </div>
+            <div class="col col-md-8">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  mt-2
+                "
+              >
+                <div>
+                  <h5 class="card-title fw-bolder">2020 台味設計展</h5>
+                  <span class="card-text">01 JUN — 31 OCT</span><br />
+                  <span class="card-text">全票</span><br />
+                  <span class="card-text fw-bolder fs-4">NT$350</span>
+                </div>
+                <div
+                  class="
+                    d-flex
+                    flex-column
+                    d-md-block
+                    flex-md-row
+                    align-items-center
+                  "
+                >
+                  <button
+                    class="btn btn-outline-secondary border-0"
+                    type="button"
+                  >
+                    <span class="material-icons-outlined"> remove </span>
+                  </button>
+                  <span class="fs-4 fw-bolder">01</span>
+                  <button
+                    class="btn btn-outline-secondary border-0"
+                    type="button"
+                  >
+                    <span class="material-icons-outlined"> add </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-5 mt-md-9">
+          <div class="text-white">
+            <span class="fs-4 fw-bold">小計</span>
+            <span class="fs-4 fw-bold">NT$1050</span>
+          </div>
+          <a href="#" class="cart-hover rounded-3 px-6 py-3">前往結帳</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 手機畫面文字 -->
+  <div class="row mt-7">
+    <div class="col-md-12 d-block d-md-none">
+      <h3 class="fs-4 lh-base fw-bolder">藝饗宴</h3>
+      <h3 class="fs-4 lh-base fw-bolder">​Celebration of Style and Art</h3>
+      <p class="ticket-text">
+        匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。
+      </p>
+      <p>
+        從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws
+        等，都受到許多收藏家的喜愛，同時也是當代藝術史上重要的一員。在這個展區，向藏家借展的作品都是一時之選，也反映出街頭藝術發展的某一種共性。另外，在與時尚跨界的藝術表現上，有永遠嘲諷時尚卻很時尚的藝術家Death
+        NYC、臺灣新銳服裝設計師吳日云、尋找鎂光燈背後那真實藝術家身分的郭彥甫、年輕雕塑家賴冠仲、橫跨藝術與時尚設計師雙重身分的雙人組陳薇與李崇德、創造出療癒角色俊寶Zunbo
+        的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。
+      </p>
+    </div>
+  </div>
+  <!-- 滿版圖片 -->
+  <div class="row mb-4 mt-md-6">
+    <div class="col-md-12 clearfix">
+      <div class="ticket-wall"></div>
+    </div>
+  </div>
+  <!-- 藝饗宴 -->
+  <div class="row mt-md-6">
+    <div class="col-md-4">
+      <img
+        class="ticket-banquet img-fluid"
+        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg"
+        alt="banquet"
+      />
+    </div>
+    <div class="col-md-8 d-none d-md-block">
+      <h3 class="fs-4 lh-base fw-bolder">藝饗宴</h3>
+      <h3 class="fs-4 lh-base fw-bolder">​Celebration of Style and Art</h3>
+      <p class="ticket-text">
+        匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。
+      </p>
+      <p>
+        從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws
+        等，都受到許多收藏家的喜愛，同時也是當代藝術史上重要的一員。在這個展區，向藏家借展的作品都是一時之選，也反映出街頭藝術發展的某一種共性。另外，在與時尚跨界的藝術表現上，有永遠嘲諷時尚卻很時尚的藝術家Death
+        NYC、臺灣新銳服裝設計師吳日云、尋找鎂光燈背後那真實藝術家身分的郭彥甫、年輕雕塑家賴冠仲、橫跨藝術與時尚設計師雙重身分的雙人組陳薇與李崇德、創造出療癒角色俊寶Zunbo
+        的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。
+      </p>
+    </div>
+  </div>
+  <!-- 猜你也喜歡... -->
+  <h2 class="fs-1 fw-bolder mt-3 mt-md-8 mb-md-2">猜你也喜歡...</h2>
+  <div class="mb-6">
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="works works1"></div>
+          <h4 class="fw-bolder mt-2">No.22 線上設計展</h4>
+          <span class="fs-4 1h-base">$350</span>
+        </div>
+        <div class="swiper-slide">
+          <div class="works works2"></div>
+          <h4 class="fw-bolder mt-2">No.22 線上設計展</h4>
+          <span class="fs-4 1h-base">$350</span>
+        </div>
+        <div class="swiper-slide">
+          <div class="works3 works"></div>
+          <h4 class="fw-bolder mt-2">No.22 線上設計展</h4>
+          <span class="fs-4 1h-base">$350</span>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>

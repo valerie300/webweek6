@@ -1,0 +1,78 @@
+// nav 捲軸
+.nav-scroller {
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+.nav-scroller .nav {
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    -webkit-overflow-scrolling: touch;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.bg-body {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-body-rgb),var(--bs-bg-opacity));
+}
+// header
+.header-img{
+    padding: 240px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg');
+}
+// 熱門特展
+.special-date{
+    width: 32px;
+}
+// 直播回顧
+.review-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png');
+}
+.review-border{
+    border-left: 1px solid #fff;
+}
+// 猜你也喜歡
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+// .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+.works{
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.works1{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg');
+}
+.works2{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg');
+}
+.works3{
+    width: 225px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% center;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg');
+}

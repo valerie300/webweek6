@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+// 避免出現 x 軸
+html {
+    overflow-y: scroll;
+}
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+:root body {
+  position: absolute;
+}
+body {
+    width: 100vw;  // 避免出現 x 軸
+    overflow: hidden; // 避免出現 x 軸
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    overflow-y: hidden;
+}
+// footer
+@include media-breakpoint-up(sm) { 
+    .fs-sm-nav{
+        font-size: 22px;
+    }
+    .fs-sm-news{
+        font-size: 24px;
+    }
+}
+.footer-img{
+    padding: 200px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+}
