@@ -64,7 +64,7 @@
 
     
 <!-- nav -->
-<div class="nav-scroller bg-body shadow-sm border-top d-none d-md-block">
+<div class="nav-scroller bg-body shadow-sm border-top border-bottom">
   <nav
     class="
       nav
@@ -87,7 +87,7 @@
 </div>
 <!-- 內容 -->
 <div class="container">
-  <div class="row mt-md-9">
+  <div class="row mt-7 mt-md-9">
     <div class="col-md-6 clearfix">
       <div class="card">
         <img
@@ -149,18 +149,20 @@
       </div>
     </div>
     <div class="col-md-3 flex-column d-flex justify-content-md-evenly">
-      <div class="d-flex flex-column align-items-center mt-7 ticket-border">
-        <div class="mt-md-4">
-          <span class="ticket-num fw-bolder mx-5">NT$350</span>
-        </div>
-        <span class="mt-md-6">票種</span>
-        <div class="d-flex align-items-center mt-3">
-          <a href="#" class="fw-bold px-3 ticket-type"> 學生 </a>
-          <a href="#" class="fw-bold px-3 ticket-type"> 全票 </a>
-          <a href="#" class="fw-bold px-3 ticket-type"> 愛心 </a>
+      <div class="row">
+        <div class="col-md-12 ticket-border">
+          <div class="d-flex flex-column align-items-center mt-6">
+            <span class="ticket-num fw-bolder mx-5 my-5">NT$350</span>
+          </div>
+          <p class="text-center">票種</p>
+          <div class="d-flex justify-content-center align-items-center mt-3">
+            <a href="#" class="fw-bold px-3 ticket-type"> 學生 </a>
+            <a href="#" class="fw-bold px-3 ticket-type"> 全票 </a>
+            <a href="#" class="fw-bold px-3 ticket-type"> 愛心 </a>
+          </div>
         </div>
       </div>
-      <div class="d-grid gap-2 mb-7">
+      <div class="d-grid gap-2 mb-7 my-1">
         <button
           class="btn btn-zeal py-3 d-none d-md-block"
           data-bs-toggle="offcanvas"
@@ -171,6 +173,7 @@
           購買票券
         </button>
       </div>
+      <!-- 手機視窗按鈕 -->
       <div class="row d-md-none">
         <div class="d-grid gap-2 col">
           <button class="btn btn-outline-primary py-3" type="button">
@@ -198,7 +201,10 @@
       aria-labelledby="offcanvasRightLabel"
     >
       <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel" class="fs-1 fw-bolder text-white py-2 py-md-4">
+        <h5
+          id="offcanvasRightLabel"
+          class="fs-1 fw-bolder text-white py-2 py-md-4"
+        >
           Cart List
         </h5>
         <button
@@ -208,7 +214,7 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body position-relative">
         <div class="card rounded-3 mb-4">
           <div class="row gx-2 pb-4 pb-md-5">
             <div class="col-auto col-md-4 d-flex flex-column clearfix">
@@ -383,12 +389,36 @@
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-between align-items-center mt-5 mt-md-9">
-          <div class="text-white">
-            <span class="fs-4 fw-bold">小計</span>
-            <span class="fs-4 fw-bold">NT$1050</span>
+        <div class="position-absolute bottom-5 d-none d-md-block">
+          <div class="d-flex align-items-center">
+            <div>
+              <span class="fs-4 fw-bold text-white">小計</span>
+              <span class="fs-4 fw-bold text-white">NT$1050</span>
+            </div>
+            <div class="ms-11">
+              <a href="#" class="cart-hover rounded-3 px-6 py-3">前往結帳</a>
+            </div>
           </div>
-          <a href="#" class="cart-hover rounded-3 px-6 py-3">前往結帳</a>
+        </div>
+        <!-- 手機彈跳視窗總結按鈕 -->
+        <div
+          class="
+            mt-6
+            d-flex
+            justify-content-between
+            align-items-center
+            d-block d-md-none
+          "
+        >
+          <div>
+            <span class="fs-4 fw-bold text-white">小計</span>
+            <span class="fs-4 fw-bold text-white">NT$1050</span>
+          </div>
+          <div>
+            <a href="#" class="d-block cart-hover rounded-3 px-6 py-3"
+              >前往結帳</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -439,28 +469,42 @@
     </div>
   </div>
   <!-- 猜你也喜歡... -->
-  <h2 class="fs-1 fw-bolder mt-3 mt-md-8 mb-md-2">猜你也喜歡...</h2>
-  <div class="mb-6">
+  <h2 class="fs-1 fw-bolder mt-6 mt-md-8 mb-md-5">猜你也喜歡...</h2>
+  <div class="row mb-9">
     <!-- Swiper -->
-    <div class="swiper-container mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="works works1"></div>
-          <h4 class="fw-bolder mt-2">No.22 線上設計展</h4>
-          <span class="fs-4 1h-base">$350</span>
+    <div class="offset-md-1">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              class="works"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+              alt="展覽"
+            />
+            <h4 class="fw-bolder mt-2">No.22 線上設計展</h4>
+            <span class="fs-4 1h-base">$350</span>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="works"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+              alt="展覽"
+            />
+            <h4 class="fw-bolder mt-2">No.22 線上設計展</h4>
+            <span class="fs-4 1h-base">$350</span>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="works3"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg"
+              alt="展覽"
+            />
+            <h4 class="fw-bolder mt-2">No.22 線上設計展</h4>
+            <span class="fs-4 1h-base">$350</span>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <div class="works works2"></div>
-          <h4 class="fw-bolder mt-2">No.22 線上設計展</h4>
-          <span class="fs-4 1h-base">$350</span>
-        </div>
-        <div class="swiper-slide">
-          <div class="works3 works"></div>
-          <h4 class="fw-bolder mt-2">No.22 線上設計展</h4>
-          <span class="fs-4 1h-base">$350</span>
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
   </div>
 </div>

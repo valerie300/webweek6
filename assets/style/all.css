@@ -14415,29 +14415,27 @@ body {
   height: 100%;
 }
 
+.swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .works {
   width: 350px;
   height: 350px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.works1 {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg");
-}
-
-.works2 {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg");
 }
 
 .works3 {
-  width: 225px;
+  width: 350px;
   height: 350px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 20% center;
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg");
+}
+
+@media (min-width: 576px) {
+  .works3 {
+    width: 225px;
+    height: 350px;
+  }
 }
 
 .design-title {
@@ -14508,6 +14506,20 @@ body {
 .cart-hover:hover {
   color: #fff;
   background-color: #630834;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #ececec;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #E31277;
 }
 
 .timeline-section {
