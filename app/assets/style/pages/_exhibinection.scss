@@ -6,8 +6,3 @@
 .design-width{
     width: 32px;
 }
-@include media-breakpoint-up(sm) { 
-    .design-sm-text{
-        font-size: 16px;
-    }
-}

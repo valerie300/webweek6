@@ -5,8 +5,3 @@
 .complete-box{
     width: 345px;
 }
-@include media-breakpoint-up(md) { 
-    .complete-box{
-        width: 540px;
-    }
-}

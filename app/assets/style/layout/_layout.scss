@@ -19,14 +19,6 @@ body {
     overflow-y: hidden;
 }
 // footer
-@include media-breakpoint-up(sm) { 
-    .fs-sm-nav{
-        font-size: 22px;
-    }
-    .fs-sm-news{
-        font-size: 24px;
-    }
-}
 .footer-img{
     padding: 200px 0;
     background-repeat: no-repeat;

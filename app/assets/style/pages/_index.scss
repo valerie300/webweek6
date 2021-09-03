@@ -15,8 +15,8 @@
     margin-bottom: 0;
     list-style: none;
 }
-.shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+.nav-hover:hover{
+    background-color: rgba(231, 231, 231, 0.75);
 }
 .bg-body {
     --bs-bg-opacity: 1;
@@ -44,28 +44,4 @@
 .review-border{
     border-left: 1px solid #fff;
 }
-// 猜你也喜歡
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-.swiper-slide img {
-    display: block;
-    // width: 100%;
-    // height: 100%;
-    object-fit: cover;
-}
-.works{
-    width: 350px;
-    height: 350px;
-}
-.works3{
-    width: 350px;
-    height: 350px;
-}
-@include media-breakpoint-up(sm) { 
-    .works3{
-        width: 225px;
-        height: 350px;
-    }
-}
+

@@ -12,11 +12,6 @@
 .ticket-border{
     border-left: none;
 }
-@include media-breakpoint-up(md) { 
-    .ticket-border{
-        border-left: 1px solid #000;
-    }
-}
 // 滿版banner
 .ticket-wall{
     width: auto;

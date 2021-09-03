@@ -1,0 +1,36 @@
+// layout
+// footer
+@include media-breakpoint-up(sm) { 
+    .fs-sm-nav{
+        font-size: 22px;
+    }
+    .fs-sm-news{
+        font-size: 24px;
+    }
+}
+// exhibinection
+@include media-breakpoint-up(sm) { 
+    .design-sm-text{
+        font-size: 16px;
+    }
+}
+// ticket
+@include media-breakpoint-up(md) { 
+    .ticket-border{
+        border-left: 1px solid #000;
+    }
+}
+// cart
+// 進度條文字
+@include media-breakpoint-up(md) { 
+    .timeline-text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+// complete
+@include media-breakpoint-up(md) { 
+    .complete-box{
+        width: 540px;
+    }
+}

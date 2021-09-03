@@ -47,9 +47,3 @@
     font-size: 14px;
     line-height: 21px;
 }
-@include media-breakpoint-up(md) { 
-    .timeline-text{
-        font-size: 16px;
-        line-height: 24px;
-    }
-}

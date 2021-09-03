@@ -2,10 +2,15 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
-
+// 第三方套件樣式設定
+@import "./vendors/swiper";
+// mixin
+@import './layout/mixin';
 @import './layout/layout.scss';
-@import './layout/index.scss';
-@import './layout/exhibinection.scss';
-@import './layout/ticket.scss';
-@import './layout/cart.scss';
-@import './layout/complete.scss';
+
+// 頁面
+@import './pages/index';
+@import './pages/exhibinection';
+@import './pages/ticket';
+@import './pages/cart';
+@import './pages/complete';
